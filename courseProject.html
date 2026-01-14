@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaylen Terry | Course Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="bg-grid"></div>
+  <div class="bg-scanlines"></div>
+
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <div class="dot live"></div>
+        <div class="dot warn"></div>
+        <div class="dot dead"></div>
+        <span class="brand-text">jaylen@resume:~/projects$</span>
+      </div>
+
+      <nav class="nav">
+        <a class="btn" href="index.html">About</a>
+        <a class="btn active" href="courseProject.html">Course Project</a>
+        <a class="btn" href="hobbies.html">Hobbies</a>
+      </nav>
+    </header>
+
+    <section class="page-title">
+      <h1>Course Projects</h1>
+      <p class="lead">Here are projects I’ve worked on, what they do, the tools used, and my role.</p>
+    </section>
+
+    <!-- PROJECT 1 -->
+    <section class="card">
+      <h2 class="card-title">Much To Do (Godot / GDScript)</h2>
+      <p class="mono-block">
+        MuchToDo is a to-do list first and a game second. Users complete real-life tasks to gain XP and level up
+        their character. Higher level = more damage to enemies. After defeating enough enemies, the Area Boss can be challenged.
+      </p>
+
+      <div class="grid2">
+        <div>
+          <h3 class="sub">Key Features</h3>
+          <ul class="bullets">
+            <li>Add custom tasks/goals</li>
+            <li>Mark tasks complete → grants XP</li>
+            <li>Attack damage scales with character level</li>
+            <li>Boss challenges + stage progression</li>
+            <li>Multiple screens/menus (main, list, add/edit, hero, stage select)</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="sub">Tools + My Role</h3>
+          <ul class="bullets">
+            <li><b>Tools:</b> Godot Engine, GDScript</li>
+            <li><b>My role:</b>  Backend: Task + goal management system (creating, organizing, updating)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT 2 -->
+    <section class="card">
+      <h2 class="card-title">Lord of Space (JavaFX)</h2>
+      <p class="mono-block">
+        A JavaFX space shooter. You move the ship, shoot enemies, avoid hits and meteors, and try to earn a high score.
+      </p>
+
+      <div class="grid2">
+        <div>
+          <h3 class="sub">Features</h3>
+          <ul class="bullets">
+            <li>Multiple enemy types</li>
+            <li>Explosions + shooting effects</li>
+            <li>Score tracking</li>
+            <li>Simple controls</li>
+            <li>Animated background for “flying through space” feel</li>
+            <li><b>Controls:</b> Mouse move (horizontal), left click to shoot</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="sub">Tools + My Role</h3>
+          <ul class="bullets">
+            <li><b>Tools:</b> Java, JavaFX</li>
+            <li><b>My role:</b> Full creator</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT 3 -->
+    <section class="card">
+      <h2 class="card-title">SmartFood AI (Full-Stack)</h2>
+      <p class="mono-block">
+        A kitchen + health companion app: manage pantry inventory, scan receipts, detect duplicates,
+        look up nutrition and barcodes, and get AI-powered recipe suggestions based on what you already have.
+      </p>
+
+      <div class="grid2">
+        <div>
+          <h3 class="sub">Core Features</h3>
+          <ul class="bullets">
+            <li>Smart pantry management + expiration alerts</li>
+            <li>Receipt scanner (OCR + LLM parsing)</li>
+            <li>Duplicate detection for receipts/items</li>
+            <li>Barcode + nutrition lookups</li>
+            <li>AI recipe suggestions based on pantry</li>
+            <li>Household sharing + expense tracking</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="sub">Tech Stack + My Role</h3>
+          <ul class="bullets">
+            <li><b>Backend:</b> Node.js, Express, Supabase (Postgres + RLS), JWT</li>
+            <li><b>APIs:</b> Google Cloud Vision, OpenRouter (GPT-4), Edamam, Barcode lookup</li>
+            <li><b>Caching:</b> Upstash Redis</li>
+            <li><b>Frontend:</b> Pure HTML/CSS/JS (dark theme)</li>
+            <li><b>My role:</b> Backend</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span class="muted">© <span id="year"></span> Jaylen Terry</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

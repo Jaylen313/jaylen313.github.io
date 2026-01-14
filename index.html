@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Browser Tab Title-->
+  <title>Jaylen Terry | Cybersecurity Resume</title>
+
+  <!--Link css -->
+  <link rel="stylesheet" href="styles.css" />
+
+  
+</head>
+
+<body>
+  <!-- Animated background layers -->
+  <div class="bg-grid"></div>
+  <div class="bg-scanlines"></div>
+
+  
+  <div class="wrap">
+
+    <!--  Top terminal header -->
+    <header class="top">
+      <div class="brand">
+        <div class="dot live"></div>
+        <div class="dot warn"></div>
+        <div class="dot dead"></div>
+        <span class="brand-text">jaylen@resume:~$</span>
+      </div>
+
+      <!--  Navigation buttons  -->
+      <nav class="nav">
+        <a class="btn active" href="index.html">About</a>
+        <a class="btn" href="courseProject.html">Course Project</a>
+        <a class="btn" href="hobbies.html">Hobbies</a>
+      </nav>
+    </header>
+
+    <!-- My name and role --> -->
+    <section class="hero">
+      <div>
+        <h1>
+          Jaylen Terry
+          <span class="tag">Cybersecurity Student</span>
+        </h1>
+
+        <!--  Typing effect -->
+        <p class="type-line">
+          <span class="prompt">></span>
+          <span id="typing"></span>
+          <span class="cursor">█</span>
+        </p>
+
+        <!-- Summary -->
+        <p class="lead">
+          I’m studying <b>Cybersecurity</b> and I’m focused on learning how systems work,
+          how vulnerabilities happen, and how to defend (and test) systems the right way.
+          I’m especially interested in how attackers think — and how to stop them.
+        </p>
+
+        <!-- Roles that I am interested in -->
+        <div class="chips">
+          <span class="chip">Penetration Tester</span>
+          <span class="chip">Malware Analysis / Reverse Engineering</span>
+          <span class="chip">Security Analyst</span>
+          <span class="chip">Security Engineer</span>
+          <span class="chip">Incident Responder / Threat Hunter</span>
+          <span class="chip">Cloud Security</span>
+        </div>
+
+        <!-- Github link -->
+        <div class="links">
+
+          <a class="link" href="https://github.com/Jaylen313" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Quick Info Card -->
+      <aside class="card">
+        <h2 class="card-title">Quick Info</h2>
+        <ul class="kv">
+          <li><span>Focus</span><span>Cybersecurity</span></li>
+          <li><span>Current Languages</span><span>Python, Java, C, C++</span></li>
+          <li><span>Favorite Areas</span><span>Vulns, Tools, Defense, Offensive</span></li>
+          <li><span>Status</span><span class="ok">Learning + Building</span></li>
+        </ul>
+        <div class="mini">
+          <div class="mini-title">System Time</div>
+          <div id="clock" class="mono">--:--:--</div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Skills section -->
+    <section class="grid2">
+      <div class="card">
+        <h2 class="card-title">Skills (What I can do)</h2>
+        <ul class="bullets">
+          <li>Basic networking + scanning concepts</li>
+          <li>Security mindset: finding weaknesses and thinking through risk</li>
+          <li>Programming fundamentals (Python / Java / C / C++ / HTML / CSS / JavaScript)</li>
+          <li>Building projects and learning tools fast</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="card-title">Skills I Want to Learn (Next Level)</h2>
+        <ul class="bullets">
+          <li>Reverse engineering (Ghidra / x64dbg basics)</li>
+          <li>Malware analysis workflows (static + dynamic)</li>
+          <li>Threat hunting + incident response process</li>
+          <li>Cloud security (IAM, logging, misconfigs)</li>
+          <li>Security engineering (secure design + hardening)</li>
+          <li>Improving defensive and offensive cybersecurity strategies and methodologies</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 16) Short “why cybersecurity” section -->
+    <section class="card">
+      <h2 class="card-title">Why Cybersecurity</h2>
+      <p class="mono-block">
+        For the longest time I’ve wondered how computers work and how people can make systems do things
+        they aren’t supposed to do. I like learning about vulnerabilities, how they happen, and how to fix
+        security problems the right way. I also enjoy building tools and understanding what’s happening “behind the scenes.”
+      </p>
+    </section>
+
+    <!-- 17) Footer -->
+    <footer class="foot">
+      <span class="muted">© <span id="year"></span> Jaylen Terry</span>
+    </footer>
+  </div>
+
+  <!-- 18) Optional JS for typing + clock -->
+  <script src="script.js"></script>
+</body>
+</html>
